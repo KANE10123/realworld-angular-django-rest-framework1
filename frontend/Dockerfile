@@ -26,7 +26,7 @@ FROM nginx:alpine
 COPY --from=build /app/dist/frontend /usr/share/nginx/html
 
 # Expose port 80 (standard HTTP)
-EXPOSE 3000
+EXPOSE 80
 
 # Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
